@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    let nomes = [];
+    let nome = prompt('Digite um nome para cadastrar ou "sair" para fechar o sistema');
+    while (nome !='sair') {
+      nomes.push(nome);
+      nome = prompt('Digite um nome para cadastrar ou "sair" para fechar o sistema');
+    }
+    alert(`${nomes.join(', ')} total: ${nomes.length}`);
+
+
+
+
+
+  </script>
+</body>
+</html>

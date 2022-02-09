@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let produto =[
+      ['Pão de queijo ', 'Kidelicia ', 26],
+      ['Pastel ', 'Cooper ', 12],
+      ['Torta de Abobora ', 'Kibaguett ', 98]
+    ];
+
+    for(let linha = 0; linha < produto.length;linha++){
+      for(let coluna = 0; coluna < produto[linha].length;coluna++){
+        document.write(`${produto[linha][coluna]},`);
+      }
+      document.write('<br>');
+      document.write('<hr>');
+    }
+  </script>
+</body>
+</html>

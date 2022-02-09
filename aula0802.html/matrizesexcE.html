@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let produtos = [
+      [1,'bergamota ' , 2],
+      [2,'Goiaba ', 7]
+    ]
+    let texto = 'Digite 1 para Bergamota, 2 para Goiaba ou 0 para sair'
+    let soma = 0;
+    let opcao = prompt(texto);
+    let quantidade = parseInt(prompt('informe a quantidade do produto '));
+    while(opcao != '0'){
+      for (let linha = 0; linha < produtos.length; linha++){
+        if(produtos[linha][0] == parseInt(opcao)){
+          let nome = produtos[linha][1];
+          let preço = produtos[linha][2];
+          soma += (preço * quantidade)
+          document.write(`produto comprado foi ${nome} o preço é ${preço} total do produto: ${preço * quantidade}`);
+          document.write('<br>')
+          }
+        }
+        opcao = prompt(texto);
+        if (opcao != '0')
+          quantidade = parseInt(prompt('informe a quantidade do produto'));
+    }
+    document.write(`<h1> O valor total da compra foi ${soma}</h1>`);
+    
+
+
+  </script>
+</body>
+</html>

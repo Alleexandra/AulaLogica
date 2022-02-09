@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1exercicio1</title>
+  
+  
+  
+  
+  <script>
+
+    /*
+
+      Celsios => Fahrenheit - C * (9/5) + 32
+      Fahrenheint => F Celsios - (F - 32) * (5/9)
+
+    */
+
+
+    //Variável
+
+    let temp = prompt('Informe a temperatura a converter:')
+    let escolha = prompt('Seleciona qual a conversão: \n' +
+                  'Celsios => Fahrenheint - Digite 1 \n' +
+                  'Fahrenheint => Celsios - Digite2' )
+
+    let fahrenheint = temp * (9/5) + 32
+    let celsios = temp * (temp - 32) * (5/9)
+
+    //Estrutura Escolha
+    switch(escolha){
+     case '1':
+      document.write( 'Celsios => Fahrenheeint - ' + fahrenheint + '°')
+      break
+     case '2':
+       document.write( 'Fahrenheint => Celsios - ' + celsios + '°')
+       break
+     default:
+       document.write( 'Nenhuma opção foi selecionada.')
+    }
+
+  
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+  
+</body>
+</html>

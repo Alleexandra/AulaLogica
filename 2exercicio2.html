@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2exercicio2</title>
+  
+  
+  
+  <script>
+
+    //Variável
+
+    let valor = prompt('Insira um valor')
+    let conversões = prompt ('Selecine qual conversão vai ser:\n' +
+                             'Real para Dólar - Digite 1 \n' + 
+                             'Dólar para Real - Digite 2 \n' +
+                             'Real para Euro - Digite 3 \n' +
+                             'Euro para Real - Digite 4 \n' )
+
+    let RealDólar = valor * 0.19
+    let DólarReal = valor * 5.37
+    let RealEuro = valor * 0.17
+    let EuroReal = valor * 5.98
+    
+    //Estrutura Conversão
+    switch(conversões){
+     case'1':
+        document.write('Real para Dólar - ' + RealDólar + '' )
+      break
+    case'2':
+       document.write('Dólar para Real - ' + DólarReal + '')
+       break
+     case'3':
+      document.write('Real para Euro - ' + RealEuro + '')
+      break
+    case'4':
+     document.write('Euro para Real - ' + EuroReal + '')
+      break
+    default:
+      document.write('Não foi selecionado nada')
+    }
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+</head>
+<body>
+  
+</body>
+</html>
